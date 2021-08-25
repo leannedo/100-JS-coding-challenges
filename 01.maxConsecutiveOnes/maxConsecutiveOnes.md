@@ -14,7 +14,6 @@ So the idea is we will have a pointer to count the numbers of 1s. Then while we 
 
 We have another pointer to keep track of the highest count available. Before count is reset, we save its value to this pointer. If we find any value higher than this, we will reassign this counter to take that highest value and finally returns it. 
 
-
 ```js
 const findMaxConsecutiveOnes = (nums) => {
     let count = 0; 
@@ -35,3 +34,7 @@ const findMaxConsecutiveOnes = (nums) => {
     return maxConsecutiveOnes;
 };
 ```
+
+### Statistics: 
+Runtime: 80 ms
+Memory Usage: 38.9 MB
