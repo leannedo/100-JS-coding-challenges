@@ -1,6 +1,6 @@
 const arr = [1,1,2];
 
-const removeDuplicatesWithFilter = (nums) => {
+const removeDuplicatesSolution1 = (nums) => {
     const formattedNums = nums.filter((el, index) => nums.indexOf(el) === index);
     // when it encounters the el for the 2nd time, it will return the first index 
     // which is different from the current index 
@@ -8,9 +8,9 @@ const removeDuplicatesWithFilter = (nums) => {
     console.log(formattedNums);
 }
 
-removeDuplicatesWithFilter(arr);
+removeDuplicatesSolution1(arr);
 
-const removeDuplicatesWithReduce = (nums) => {
+const removeDuplicatesSolution2 = (nums) => {
     nums.reduce((unique, curr) => {
         return unique.includes(curr) ? unique : [...unique, curr]
     }, [])
