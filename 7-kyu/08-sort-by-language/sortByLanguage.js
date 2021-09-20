@@ -38,14 +38,13 @@ const dynamicSortMultiple = (key1, key2) => {
     }
 }
 
-const sortByLanguage = list => {
+const sortByLanguageSolution1 = list => {
     return list.sort(dynamicSortMultiple('language', 'firstName'));
 }
 
-const sortByLanguageWithSort = (list) => {
+/*****/
+const sortByLanguageSolution2 = (list) => {
     return list.sort((a, b) => a.language === b.language 
         ? a.firstName.localeCompare(b.firstName)
         : a.language.localeCompare(b.language))
 }
-
-console.log(sortByLanguage(list1));

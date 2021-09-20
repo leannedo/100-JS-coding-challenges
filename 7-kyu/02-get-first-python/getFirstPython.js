@@ -7,18 +7,18 @@ const list1 = [
     { firstName: 'Henry', lastName: 'T.', country: 'Puerto Rico', continent: 'Americas', age: 30, language: 'Python' },
   ];
 
-/* 1st solution */ 
-const getFirstPython = list => {
+const getFirstPythonSolution1 = list => {
     const firstPython = list.find(dev => dev.language === 'Python');
-    return firstPython ? `${firstPython.firstName}, ${firstPython.country}` : 'There will be no Python developers';
+    return firstPython ? `${firstPython.firstName}, ${firstPython.country}` 
+                          : 'There will be no Python developers';
 }
 
-/* 2nd solution for reusable functions  */ 
+/* Using eusable functions  */ 
 const findPythonDev = (list) => list.find((dev) => dev.language === 'Python')
 const getString = (dev) => `${dev.firstName}, ${dev.country}`
 const defaultString = 'There will be no Python developers'
 
-const getFirstPython = list => {
+const getFirstPythonSolution2 = list => {
   const dev = findPythonDev(list)
   
   return dev ? getString(dev) : defaultString

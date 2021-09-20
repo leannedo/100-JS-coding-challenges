@@ -25,7 +25,7 @@ const list2 = [
 // General idea: create an object to store all the language availables along with their counts
 
 /* 1st solution using forEach */ 
-const countLanguages = list => {
+const countLanguagesSolution1 = list => {
     const result = {};
 
     list.forEach(dev => {
@@ -40,7 +40,7 @@ const countLanguages = list => {
 }
 
 /* 2nd solution, an improved version using forEach */ 
-const countLanguagesImproved = list => {
+const countLanguagesSolution2 = list => {
     const result = {};
 
     list.forEach(dev => result[dev.language] = (result[dev.language] || 0) + 1)
@@ -49,7 +49,7 @@ const countLanguagesImproved = list => {
 }
 
 /* 3rd solution using reduce */ 
-const countLanguagesWithReduce = list => {
+const countLanguagesSolution3 = list => {
     return list.reduce((res, dev) => {
         res[dev.language] ? 
             res[dev.language] = res[dev.language] + 1 : 

@@ -15,8 +15,7 @@ const list1 = [
 
 // General idea: iterate through each obj in the list and add an extra property
 
-/* 1st solution using map */ 
-const greetDevelopers = list => {
+const greetDevelopersSolution1 = list => {
     return list.map(dev => {
         const greeting = `Hi ${dev.firstName}, what do you like the most about ${dev.language}?`
         
@@ -27,14 +26,12 @@ const greetDevelopers = list => {
     })
 }
 
-/* 2nd solution, an improved version using map */ 
-const greetDevelopersImproved = list => list.map(dev => ({
+const greetDevelopersSolution2 = list => list.map(dev => ({
     ...dev, 
     'greeting': `Hi ${dev.firstName}, what do you like the most about ${dev.language}?`
 }))
 
-/* 3rd solution using forEach */ 
-const greetDevelopersForEach = list => {
+const greetDevelopersSolution3 = list => {
     list.forEach(
         dev => dev.greeting = `Hi ${dev.firstName}, what do you like the most about ${dev.language}?`
     )
