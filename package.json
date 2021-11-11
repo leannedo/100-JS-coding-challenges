@@ -1,0 +1,24 @@
+{
+  "name": "100-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "node-fetch": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leannedo/100-JS-coding-challenges.git"
+  },
+  "author": "leannedo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leannedo/100-JS-coding-challenges/issues"
+  },
+  "homepage": "https://github.com/leannedo/100-JS-coding-challenges#readme"
+}
